@@ -1,6 +1,6 @@
 const sumAll = function(start, stop) {
   // reject non-number arguments
-  if (typeof start != 'number' || typeof stop != 'number') return 'ERROR';
+  if (!Number.isInteger(start) || !Number.isInteger(stop)) return 'ERROR';
   // reject negative arguments
   if (start < 0 || stop < 0) return 'ERROR';
   // sum numbers
